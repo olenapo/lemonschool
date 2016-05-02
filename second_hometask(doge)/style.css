@@ -1,0 +1,10 @@
+.centr {
+	text-align: center;
+}
+ol, a {
+	color: darkgreen;
+}
+span {
+	text-decoration: underline;;
+	color: darkblue;
+}
