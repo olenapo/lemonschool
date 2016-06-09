@@ -1,0 +1,12 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+input:focus, 
+textarea:focus,
+select:focus {
+	outline: 0;
+}
+fieldset {
+	border: none;
+	padding: 0;
+}
