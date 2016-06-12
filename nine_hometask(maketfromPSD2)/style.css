@@ -493,12 +493,24 @@ h4 {
 }
 .nav-link-foot {
 	text-decoration: none;
+	position: relative;
 	color: #fff;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 26px;
 	letter-spacing: 0.025em;
+}
+.nav-link-foot::before {
+	content: '';
+	border-bottom: 1px solid #fff;
+	width: 0%;
+	position: absolute;
+	margin-top: 18px;
+	display: block;
+}
+.nav-link-foot:hover::before {
+	width: 100%;
 }
 
 
