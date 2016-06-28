@@ -38,6 +38,9 @@
 	display: block;
 	clear: both;
 }
+.drop {
+	display: none;
+}
 .logo {
 	display: inline-block;
 	padding-top: 15px;
@@ -648,13 +651,67 @@ h4 {
 }
 @media all and (max-width: 586px) {
 	.content-story {
-		width: 300px;
+		width: 275px;
 	}
 	.story-description > p {
 		font-size: 12px;
 	}
 }
 @media all and (max-width: 565px) {
-	
+	.drop {
+		display: block;
+		position: relative;
+		top: 25px;
+		float: right;
+		width: 32px;
+		height: 32px;
+		background: url(images/for-drop.png);
+	}
+	.navigation {
+		display: none;
+	}
+	.drop:hover .navigation {
+		position: relative;
+		width: 75px;
+		display: block;
+		padding-top: 50px;
+		text-align: left;
+	}
+	.nav-link {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+		font-size: 13px;
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	.service-item {
+		width: 100%;
+	}
+	.nav-link-foot {
+		font-size: 10px;
+	}
+	.contact {
+		padding-top: 180px;
+    }
+	.logo-foot {
+		padding-top: 20px;
+	}
 }
-
+@media all and (max-width: 489px) {
+	.right {
+		float: left;
+		padding-top: 20px;
+	}
+}
+@media all and (max-width: 446px) {
+	.logo-foot {
+		padding-left: 0;
+	}
+	.description-from-foot {
+		font-size: 10px;
+	}
+	.higher {
+		width: 280px;
+	}
+}
